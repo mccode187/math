@@ -1,4 +1,4 @@
-# [michaelcchu.github.io/math](https://michaelcchu.github.io/math/)
+# [mcchu.com/math](https://mcchu.com/math/)
 
 Keywords: 
 finite additive 2-bases, 
