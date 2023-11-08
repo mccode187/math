@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=0">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=0">
-    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png?v=0">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=0">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=0">
-    <link rel="manifest" href="/site.webmanifest?v=0">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=0" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon.ico?v=0">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=0">
-    <meta name="theme-color" content="#ffffff">
-    <title>Math</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </head>
-  <body>
-    <h1>Math</h1>
-    <h2>Results</h2>
-    <p>Given any \(n \in \mathbb{Z}_{\geq 0}\) and \(k \in [0,2n]\), we have \(|\{S : (S \subseteq [0,n]) \land (k \not \in S+S)\}| = 2^{|n-k|} \cdot 3^{\lfloor ((n+1)-|n-k|)/2 \rfloor}\). 
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=0">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=0">
+   <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png?v=0">
+   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=0">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=0">
+   <link rel="manifest" href="/site.webmanifest?v=0">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg?v=0" color="#5bbad5">
+   <link rel="shortcut icon" href="/favicon.ico?v=0">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=0">
+   <meta name="theme-color" content="#ffffff">
+   <title>Math</title>
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+   <h1>Math</h1>
+   <h2>Results</h2>
+   <p>Given any \(n \in \mathbb{Z}_{\geq 0}\) and \(k \in [0,2n]\), we have \(|\{S : (S \subseteq [0,n]) \land (k \not
+      \in S+S)\}| = 2^{|n-k|} \cdot 3^{\lfloor ((n+1)-|n-k|)/2 \rfloor}\).
       &emsp; Nov 17 2021
-    </p>
-    <p>Given any \(d \in \mathbb{Z}_{\geq 1}\) and \(n=2d^2-d\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k) \land (A,B \subseteq [0,n]) \land (A+B = [0,2n]) \} = 2d\).
-       &emsp; Dec 13 2021
-    </p>
-    <p>Given any \(d \in \mathbb{Z}_{\geq 1}\) and \(n=d^2-1\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k) \land (A,B \subseteq [0,n]) \land (A+B \supseteq [0,n]) \} = d\).
-       &emsp; Dec 13 2021
-    </p> 
-    <p>Given any \(t \in \mathbb{Z}_{\geq 1}\), \(d=2^t\), and \(n=d^2-(t-1)d-2\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k) \land (A,B \subseteq [0,n]) \land (A+_{\leq}B \supseteq [0,n]) \} = d\).
-       &emsp; Jan 08 2022
-    </p>
-   <p>Given any \(m \in \mathbb{Z}_{\geq 2}\) and \(k_1, k_2 \in [0,m-1]\) with \(k_1 \not = k_2\) and \(\gcd(k_2 - k_1, m) = 1\), we have \(|\{S : (S \subseteq \mathbb{Z}_{m}) \land (k_1, k_2 \not \in S+S)\}| = F(m)\).
+   </p>
+   <p>Given any \(d \in \mathbb{Z}_{\geq 1}\) and \(n=2d^2-d\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k)
+      \land (A,B \subseteq [0,n]) \land (A+B = [0,2n]) \} = 2d\).
+      &emsp; Dec 13 2021
+   </p>
+   <p>Given any \(d \in \mathbb{Z}_{\geq 1}\) and \(n=d^2-1\), we have \(\min \{ k : \exists A \exists B : (|A|=|B|=k)
+      \land (A,B \subseteq [0,n]) \land (A+B \supseteq [0,n]) \} = d\).
+      &emsp; Dec 13 2021
+   </p>
+   <p>Given any \(t \in \mathbb{Z}_{\geq 1}\), \(d=2^t\), and \(n=d^2-(t-1)d-2\), we have \(\min \{ k : \exists A
+      \exists B : (|A|=|B|=k) \land (A,B \subseteq [0,n]) \land (A+_{\leq}B \supseteq [0,n]) \} = d\).
+      &emsp; Jan 08 2022
+   </p>
+   <p>Given any \(m \in \mathbb{Z}_{\geq 2}\) and \(k_1, k_2 \in [0,m-1]\) with \(k_1 \not = k_2\) and \(\gcd(k_2 - k_1,
+      m) = 1\), we have \(|\{S : (S \subseteq \mathbb{Z}_{m}) \land (k_1, k_2 \not \in S+S)\}| = F(m)\).
       &emsp; Oct 29 2023
    </p>
-   <p>Given any \(m \in \mathbb{Z}_{\geq 0}\) and \(S \subseteq \mathbb{Z}_m\), if \(|S| \geq \lfloor m / 2 \rfloor + 1\), then \(S + S = S - S = \mathbb{Z}_m\).
+   <p>Given any \(m \in \mathbb{Z}_{\geq 0}\) and \(S \subseteq \mathbb{Z}_m\), if \(|S| \geq \lfloor m / 2 \rfloor +
+      1\), then \(S + S = S - S = \mathbb{Z}_m\).
       &emsp; Nov 01 2023
    </p>
-   </p>
-   <p>Given any \(m \in \mathbb{Z}_{\geq 2}\) and \(k \in [1,m-1]\), we have \(|\{S : (S \subseteq \mathbb{Z}_{m}) \land (k \not \in S-S)\}| = L(m / \gcd(k,m))^{\gcd(k,m)}\).
+   <p>Given any \(m \in \mathbb{Z}_{\geq 2}\) and \(k \in [1,m-1]\), we have \(|\{S : (S \subseteq \mathbb{Z}_{m}) \land
+      (k \not \in S-S)\}| = L(m / \gcd(k,m))^{\gcd(k,m)}\).
       &emsp; Nov 03 2023
    </p>
-   <p>Given any \(m \in \mathbb{Z}_{\geq 1}\) and \(k \in \mathbb{Z}_{m}\), we have \(|\{S : (S \subseteq \mathbb{Z}_{m}) \land (k \not \in S+S)\}| = 3^{\lfloor (m-1) / 2 \rfloor}\).
+   <p>Given any \(m \in \mathbb{Z}_{\geq 1}\) and \(k \in \mathbb{Z}_{m}\), we have \(|\{S : (S \subseteq
+      \mathbb{Z}_{m}) \land (k \not \in S+S)\}| = 3^{\lfloor (m-1) / 2 \rfloor}\).
       &emsp; Nov 03 2023
    </p>
-   
-    <h2>OEIS</h2>
-    <p><a href="https://oeis.org/A108411" target="_blank" rel="noopener noreferrer">A108411</a> -- comment
-       &emsp; Oct 05 2021 <br>
-       <a href="https://oeis.org/A137742" target="_blank" rel="noopener noreferrer">A137742</a> -- formula
-       &emsp; Dec 09 2021 <br>
+   <h2>OEIS</h2>
+   <p><a href="https://oeis.org/A108411" target="_blank" rel="noopener noreferrer">A108411</a> -- comment
+      &emsp; Oct 05 2021 <br>
+      <a href="https://oeis.org/A137742" target="_blank" rel="noopener noreferrer">A137742</a> -- formula
+      &emsp; Dec 09 2021 <br>
       <a href="http://oeis.org/A309407" target="_blank" rel="noopener noreferrer">A309407</a> -- formula
       &emsp; Jan 17 2022 <br>
       <a href="https://oeis.org/A000384" target="_blank" rel="noopener noreferrer">A000384</a> -- comment
@@ -64,35 +72,40 @@
       &emsp; May 04 2022 <br>
       <a href="http://oeis.org/A167809" target="_blank" rel="noopener noreferrer">A167809</a> -- comment
       &emsp; May 16 2022
-    </p>
-    <h2>Inequalities</h2>
-    <p><a href="http://oeis.org/A167809" target="_blank" rel="noopener noreferrer">A167809</a>(n) >= <a href="http://oeis.org/A000108" target="_blank" rel="noopener noreferrer">A000108</a>(n)
-       &emsp; May 16 2022 <br>
-       <a href="http://oeis.org/A066062" target="_blank" rel="noopener noreferrer">A066062</a>(n) >= <a href="http://oeis.org/A001405" target="_blank" rel="noopener noreferrer">A001405</a>(n)
-       &emsp; Oct 15 2023 <br>
-       <a href="http://oeis.org/A191701" target="_blank" rel="noopener noreferrer">A191701</a>(n) >= <a href="http://oeis.org/A167510" target="_blank" rel="noopener noreferrer">A167510</a>(n)
-       &emsp; Oct 27 2023 <br>
-       <a href="http://oeis.org/A196021" target="_blank" rel="noopener noreferrer">A196021</a>(n) >= <a href="http://oeis.org/A058622" target="_blank" rel="noopener noreferrer">A058622</a>(n)
-       &emsp; Oct 27 2023
    </p>
-    <h2>Notation</h2>
-    <p>\([i,j]\) denotes the integer interval \(\{i,...,j\}\), or \(\{x \in \mathbb{Z} : i \leq x \leq j\}\).<br>
-       \(A+B\) denotes the sumset of \(A\) and \(B\), or \(\{a+b : (a \in A) \land (b \in B)\}\).<br>
-       \(A+_{\leq}B\) denotes a partial sumset of \(A\) and \(B\), specifically, \(\{a+b : (a \in A) \land (b \in B) \land (a \leq b)\}\). <br>
-       \(A-B\) denotes the difference set of \(A\) and \(B\), or \(\{a-b : (a \in A) \land (b \in B)\}\).<br>
-       \(F\), the sequence of Fibonacci numbers, is given by \(F(j) = F(j-1) + F(j-2)\), with \(F(0) = 0\) and \(F(1) = 1\). <br>
-       \(L\), the sequence of Lucas numbers, is given by \(L(j) = L(j-1) + L(j-2)\), with \(L(2) = 3\) and \(L(3) = 4\).
-
-      </p>
-    <h2>Keywords</h2>
-    <p>finite additive 2-basis, <br>
+   <h2>Inequalities</h2>
+   <p><a href="http://oeis.org/A167809" target="_blank" rel="noopener noreferrer">A167809</a>(n) >= <a
+         href="http://oeis.org/A000108" target="_blank" rel="noopener noreferrer">A000108</a>(n)
+      &emsp; May 16 2022 <br>
+      <a href="http://oeis.org/A066062" target="_blank" rel="noopener noreferrer">A066062</a>(n) >= <a
+         href="http://oeis.org/A001405" target="_blank" rel="noopener noreferrer">A001405</a>(n)
+      &emsp; Oct 15 2023 <br>
+      <a href="http://oeis.org/A191701" target="_blank" rel="noopener noreferrer">A191701</a>(n) >= <a
+         href="http://oeis.org/A167510" target="_blank" rel="noopener noreferrer">A167510</a>(n)
+      &emsp; Oct 27 2023 <br>
+      <a href="http://oeis.org/A196021" target="_blank" rel="noopener noreferrer">A196021</a>(n) >= <a
+         href="http://oeis.org/A058622" target="_blank" rel="noopener noreferrer">A058622</a>(n)
+      &emsp; Oct 27 2023
+   </p>
+   <h2>Notation</h2>
+   <p>\([i,j]\) denotes the integer interval \(\{i,...,j\}\), or \(\{x \in \mathbb{Z} : i \leq x \leq j\}\).<br>
+      \(A+B\) denotes the sumset of \(A\) and \(B\), or \(\{a+b : (a \in A) \land (b \in B)\}\).<br>
+      \(A+_{\leq}B\) denotes a partial sumset of \(A\) and \(B\), specifically, \(\{a+b : (a \in A) \land (b \in B)
+      \land (a \leq b)\}\). <br>
+      \(A-B\) denotes the difference set of \(A\) and \(B\), or \(\{a-b : (a \in A) \land (b \in B)\}\).<br>
+      \(F\), the sequence of Fibonacci numbers, is given by \(F(j) = F(j-1) + F(j-2)\), with \(F(0) = 0\) and \(F(1) =
+      1\). <br>
+      \(L\), the sequence of Lucas numbers, is given by \(L(j) = L(j-1) + L(j-2)\), with \(L(2) = 3\) and \(L(3) = 4\).
+   </p>
+   <h2>Keywords</h2>
+   <p>finite additive 2-basis, <br>
       sumset, <br>
       additive basis, <br>
       additive combinatorics, <br>
       combinatorial number theory, <br>
       additive number theory, <br>
-      integer interval, <br> 
-      additive doubling, <br> 
+      integer interval, <br>
+      additive doubling, <br>
       set, <br>
       subset, <br>
       superset, <br>
@@ -105,11 +118,12 @@
       minimal, <br>
       optimal, <br>
       combinatorial covering problem
-    </p>
-    <h2>Afterwards</h2>
-    <p>Thanks for reading!
-    <p>--- <a href = "mailto:michael02chu@gmail.com">contact</a>
-        <a href = "https://github.com/michaelcchu/math">source</a>
-        <a href = "https://mcchu.com">home</a> ---    
-  </body>
+   </p>
+   <h2>Afterwards</h2>
+   <p>Thanks for reading!
+   <p>--- <a href="mailto:michael02chu@gmail.com">contact</a>
+      <a href="https://github.com/michaelcchu/math">source</a>
+      <a href="https://mcchu.com">home</a> ---
+</body>
+
 </html>
